@@ -14,7 +14,7 @@ function getContent()
     }
     return content;
 }
-
+app.use(express.static(__dirname + '/images'));
 app.get('/', function(request, response) {
 
   response.send(getContent());
